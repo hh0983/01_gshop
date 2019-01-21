@@ -16,7 +16,7 @@ export const reqAddress = (geohash) => ajax(`${BASE_URL}/position/${geohash}`)
 
 
 //2、获取食品分类列表
-//export const reqFoodTypes = () => ajax('/api/index_category')
+export const reqFoodTypes = () => ajax('/api/index_category')
 
 //3、根据经纬度获取商铺列表(最好传对象，把属性外面放上{}，就可以)
 export const reqShops = ({longitude,latitude}) => ajax('/api/shops',{longitude,latitude})
